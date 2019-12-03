@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charse="utf-8" />
+		<title>&lt;ex-ample&gt; demo page</title>
+
+		<link rel="stylesheet"
+		      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/github.min.css">
+		<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+
+		<link rel="stylesheet" href="ex-ample.css" />
+		<script src="ex-ample.js"></script>
+
+		<style>
+			ex-ample { max-width: 400px; }
+		</style>
+	</head>
+	<body>
+		<h1>&lt;ex-ample&gt; demo page</h1>
+		<p>See <a href="https://github.com/ondras/ex-ample">the GitHub repository</a> for more information.</p>
+
+		<h2>Editable HTML box</h2>
+		<ex-ample><a href="#">some <em>link</em></a></ex-ample>
+
+
+		<h2>Editable JS box</h2>
+		<ex-ample language="js">
+let node = document.createElement("marquee");
+node.textContent = "Hello";
+appendChild(node);
+		</ex-ample>
+	</body>
+</html>
