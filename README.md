@@ -12,23 +12,29 @@ npm i @ondras/ex-ample --registry https://npm.pkg.github.com
 ```
 
 ## Syntax highlighting
+
+Uses [highlight.js](https://highlightjs.org/) when present. Pick any distribution/styling that is appropriate.
+
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/github.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
 ```
 
 ## Use
+
+JavaScript code samples shall use the (global, non-standard) `appendChild` function for output.
+
 ```html
 <!-- HTML editor -->
 <ex-ample>
-	<a href="#">some <em>link</em></a>
+    <a href="#">some <em>link</em></a>
 </ex-ample>
 
 <!-- JS editor -->
 <ex-ample language="js">
-	let node = document.createElement("marquee");
-	node.textContent = "Hello";
-	appendChild(node);
+    let node = document.createElement("marquee");
+    node.textContent = "Hello";
+    appendChild(node);
 </ex-ample>
 ```
 
